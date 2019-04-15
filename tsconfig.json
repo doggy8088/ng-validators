@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "dt-compare-equal-validator": [
+        "dist/dt-compare-equal-validator"
+      ],
+      "dt-compare-equal-validator/*": [
+        "dist/dt-compare-equal-validator/*"
+      ]
+    }
   }
 }

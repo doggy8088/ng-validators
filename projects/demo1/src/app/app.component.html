@@ -1,0 +1,6 @@
+<form [formGroup]="form">
+  <div>輸入密碼: <input type="text" formControlName="pw"></div>
+  <pre>{{ this.form.get('pw').errors | json }}</pre>
+  <div>確認密碼: <input type="text" formControlName="pw2"></div>
+  <pre>{{ this.form.get('pw2').errors | json }}</pre>
+</form>
