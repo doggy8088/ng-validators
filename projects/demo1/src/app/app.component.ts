@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { compareEqual } from 'dt-compare-equal-validator';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +6,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  form: FormGroup;
-  constructor(private fb: FormBuilder) {}
+  pw: string;
+  pw2: string;
+  constructor() {}
   ngOnInit(): void {
-    this.form = this.fb.group({
-      pw: ['', [Validators.required]],
-      pw2: ['', [Validators.required, compareEqual('pw')]]
-    });
   }
 }

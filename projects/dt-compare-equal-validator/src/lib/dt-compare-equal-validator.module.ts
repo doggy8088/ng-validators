@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { DtCompareEqualValidatorComponent } from './dt-compare-equal-validator.component';
 import { FormsModule } from '@angular/forms';
+import { CompareEqualDirective } from './compare-equal.directive';
 
 @NgModule({
-  declarations: [DtCompareEqualValidatorComponent],
+  declarations: [CompareEqualDirective],
   imports: [
     FormsModule
   ],
-  exports: [DtCompareEqualValidatorComponent]
+  exports: [CompareEqualDirective]
 })
 export class DtCompareEqualValidatorModule { }
