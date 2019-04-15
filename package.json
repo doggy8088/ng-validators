@@ -4,9 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "patchlib": "cd projects/dt-compare-equal-validator && npm version patch",
     "buildlib": "ng build dt-compare-equal-validator",
-    "prepacklib": "npm run buildlib",
+    "prepacklib": "npm run patchlib && npm run buildlib",
     "packlib": "cd dist/dt-compare-equal-validator && npm pack",
+    "prepublishlib": "npm run packlib",
     "publishlib": "cd dist/dt-compare-equal-validator && npm publish",
     "test": "ng test",
     "lint": "ng lint",
