@@ -1,6 +1,15 @@
 {
   "name": "dt-compare-equal-validator",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "description": "這個套件主要可以提供 Angular 7+ 專案使用進行欄位驗證，目前提供的驗證器為 dt-compare-equal-validator，可以用來比對一個 FormGroup 下的兩個欄位內容是否一致，較常見的使用情境是用在註冊會員時「設定密碼」與「確認密碼」欄位的時候。",
+  "homepage": "https://www.facebook.com/will.fans",
+  "keywords": [
+    "angular",
+    "directives",
+    "reactive-forms",
+    "template-driven-forms"
+  ],
+  "license": "LICENSE",
   "peerDependencies": {
     "@angular/common": "^7.2.0",
     "@angular/core": "^7.2.0"
